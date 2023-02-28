@@ -188,6 +188,20 @@ img {
   transition: .4s; /*For animation dark mode*/
 }
 
+/*==================== BANNER ====================*/
+
+.banner_container {
+  background-color: var(--input-color);
+}
+
+.banner {
+  color: var(--first-color);
+  display: block;
+  font-size: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /*==================== NAV ====================*/
 .nav{
   height: 3rem;
