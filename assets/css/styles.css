@@ -102,6 +102,11 @@ body.dark-theme{
   cursor: pointer;
 }
 
+.change_theme:hover {
+  color: #FFD35A;
+  transition: ease-in-out 0.2s;
+}
+
 .nav_btns{
   display: inline-flex;
   align-items: center;
@@ -328,7 +333,7 @@ img {
 }
 
 .home_subtitle{
-  font-size: var(--h3-font-size);
+  font-size: var(--h4-font-size);
   color: var(--text-color);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-0-75);
@@ -336,6 +341,7 @@ img {
 
 .home_description{
   margin-bottom: var(--mb-2);
+  font-size: var(--smaller-font-size);
 }
 
 .home_scroll{
@@ -464,7 +470,7 @@ img {
 
 /*==================== ABOUT ====================*/
 .about_img{
-  width: 200px;
+  width: 300px;
   border-radius: .5rem;
   justify-self: center;
   align-self: center;
@@ -472,7 +478,7 @@ img {
 
 .about_description{
   text-align: center;
-  margin-bottom: var(--mb-2-5);
+  margin-top: var(--mb-0-25);
 }
 
 .about_info{
@@ -624,50 +630,50 @@ img {
 .skills_open .skills_arrow{
   transform: rotate(-180deg);
 }
-/*==================== QUALIFICATION ====================*/
-.qualification_tabs{
+/*==================== EXPERIENCE ====================*/
+.experience_tabs{
   display: flex;
   justify-content: space-evenly;
   margin-bottom: var(--mb-2);
 }
 
-.qualification_button{
+.experience_button{
   font-size: var(--h3-font-size);
   cursor: pointer;
 }
 
-.qualification_button:hover{
+.experience_button:hover{
   color: var(--first-color);
 }
 
-.qualification_icon{
+.experience_icon{
   font-size: 17px;
   margin-right: var(--mb-0-25);
 }
 
-.qualification_data{
+.experience_data{
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
   column-gap: 1.5rem;
 }
 
-.qualification_title{
+.experience_title{
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
 }
 
-.qualification_subtitle{
+.experience_subtitle{
   display: inline-block;
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-1);
 }
 
-.qualification_calendar{
+.experience_calendar{
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
 }
 
-.qualification_rounder{
+.experience_rounder{
   display: inline-block;
   width: 13px;
   height: 13px;
@@ -675,7 +681,7 @@ img {
   border-radius: 50%;
 }
 
-.qualification_line{
+.experience_line{
   display: block;
   width: 1px;
   height: 100%;
@@ -683,15 +689,15 @@ img {
   transform: translate(6px, -7px);
 }
 
-.qualification [data-content]{
+.experience [data-content]{
   display: none;
 }
 
-.qualification_active[data-content]{
+.experience_active[data-content]{
   display: block;
 }
 
-.qualification_button.qualification_active{
+.experience_button.experience_active{
   color: var(--first-color);
 }
 
@@ -772,7 +778,7 @@ img {
 }
 
 .footer_link:hover{
-  color: --first-color-lighter
+  color: var(--first-color-lighter);
 }
 
 .footer_social{
@@ -873,7 +879,7 @@ img {
     font-size: var(--normal-font-size);
   }
 
-  .qualification_data{
+  .experience_data{
     gap: .5rem;
   }
 
@@ -981,7 +987,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .qualification_sections{
+  .experience_sections{
     display: grid;
     grid-template-columns: .6fr;
     justify-content: center;
@@ -1097,7 +1103,7 @@ img {
     height: 340px;
     border-radius: 50%;
     overflow: hidden;
-    padding-left: 80px;
+    padding-left: 50px;
     order: 1;
   }
 
@@ -1126,15 +1132,15 @@ img {
     visibility: visible;
   }
 
-  .qualification_tabs{
+  .experience_tabs{
     justify-content: center;
   }
 
-  .qualification_button{
+  .experience_button{
     margin: 0 var(--mb-1);
   }
 
-  .qualification_sections{
+  .experience_sections{
     grid-template-columns: .5fr;
   }
 
