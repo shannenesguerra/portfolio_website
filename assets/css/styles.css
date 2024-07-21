@@ -20,6 +20,7 @@
     --container-color: #1c1c1c;
     --scroll-bar-color: #1c1c1c;
     --scroll-thumb-color: #1c1c1c;
+    --newcolor:#181818;
 
     /*========== Font and typography ==========*/
     --body-font: 'Poppins', sans-serif;
@@ -507,129 +508,174 @@ img {
   display: flex;
   justify-content: center;
 }
+/*==================== INTERESTS ====================*/
+
+.container-wrapper {
+  display: flex;
+  justify-content: center; 
+}
+
+.interest-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(2, auto);
+  gap: 0.5rem; 
+  margin: 0 auto; 
+  padding: 0 1rem;
+  max-width: 1000px; 
+}
+
+.interest {
+  background-color: var(--container-color);
+  padding: var(--mb-1);
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: var(--text-color);
+}
+
+
+body:not(.dark-theme) .interest {
+  background-color: #fff; 
+  color: #000; 
+}
+
+
+body.dark-theme .interest {
+  background-color: #000; 
+  color: #fff;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .interest-container {
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(3, auto); 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .interest-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto); 
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .interest-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto); 
+  }
+}
+
 
 /*==================== SKILLS ====================*/
-.skills_container{
-  row-gap: 0;
+
+.skill-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
-.skills_header{
+.skills_container {
+  position: relative;
+  width: 50%;
+  height: 300px;
+}
+
+.box {
+  position: absolute;
+  width: 100%;
+  height: calc(50% - 15px);
+  background-color: var(--newcolor);
   display: flex;
   align-items: center;
-  margin-bottom: var(--mb-2-5);
-  cursor: pointer;
+  justify-content: center;
+  padding: 0 10px; 
 }
 
-.skills_icon,
-.skills_arrow{
-  font-size: 2rem;
-  color: var(--first-color);
+.box1 {
+  top: 0;
+  margin-bottom: 15px; 
 }
 
-.skills_icon{
-  margin-right: var(--mb-0-75);
+.box2 {
+  bottom: 0;
+  margin-top: 15px; 
 }
 
-.skills_title{
-  font-size: var(--h3-font-size);
-}
-
-.skills_subtitle{
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
-}
-
-.skills_list{
-  row-gap: 1.5rem;
-  padding-left: 2.7rem;
-}
-
-.skills_arrow{
-  margin-left: auto;
-  transition: .4s;
-}
-
-.skills_titles{
+.small-box-wrapper {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: var(--mb-0-5);
+  justify-content: flex-end; 
+  position: relative; 
+  width: 100%;
+  height: 100%;
 }
 
-.skills_name{
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
+.small-box-container-top {
+  display: flex;
+  gap: 2rem; 
+  align-items: center; 
+  justify-content: flex-start;
+  margin-right: -200px;
+}
+.small-box-container-bottom {
+  display: flex;
+  gap: 2rem; 
+  align-items: center; 
+  justify-content: flex-start;
+  margin-left: -200px;
 }
 
-.skills_bar,
-.skills_percentage{
-  height: 5px;
-  border-radius: .25rem;
+.small-box {
+  width: 80px;
+  height: 80px;
+  background-color: #f1f1f1; 
+  border-radius: 10px;
 }
 
-.skills_bar{
-  background-color: var(--first-color-lighter);
+
+/* Light mode styles */
+body:not(.dark-theme) .box {
+  background-color: #fff; 
+  color: #000; 
+}
+body:not(.dark-theme) .small-box{
+  background-color: #000; 
+  
+}
+body:not(.dark-theme) .rotated-text-top {
+ color: #000;
+}
+body:not(.dark-theme) .rotated-text-bottom {
+  color: #000;
+ }
+/* Dark mode styles */
+body.dark-theme .rotated-text-bottom, .rotated-text-top {
+  color: #fff; 
 }
 
-.skills_percentage{
-  display: block;
-  background-color: var(--first-color);
+/* .rotated-text-top {
+  transform: rotate(270deg); 
+  transform-origin: left bottom;
+  display: inline-block;
+  white-space: nowrap; 
+  text-align: center;
 }
+.rotated-text-bottom {
+  transform: rotate(90deg); 
+  transform-origin: left bottom;
+  display: inline-block;
+  white-space: nowrap; 
+  text-align: center;
+}  */
 
-.skills_html{
-  width: 90%;
-}
 
-.skills_css{
-  width: 80%;
-}
 
-.skills_javascript{
-  width: 60%;
-}
 
-.skills_php{
-  width: 80%;
-}
 
-.skills_nodejs{
-  width: 60%;
-}
-.skills_python{
-  width: 70%;
-}
-.skills_ruby{
-  width: 55%;
-}
-
-.skills_figma{
-  width: 90%;
-}
-
-.skills_sketch{
-  width: 85%;
-}
-
-.skills_adobexd{
-  width: 80%;
-}
-
-.skills_photoshop{
-  width: 85%;
-}
-
-.skills_close .skills_list{
-  height: 0;
-  overflow: hidden;
-}
-
-.skills_open .skills_list{
-  height: max-content;
-  margin-bottom: var(--mb-2-5);
-}
-
-.skills_open .skills_arrow{
-  transform: rotate(-180deg);
-}
 /*==================== EXPERIENCE ====================*/
 .experience_tabs{
   display: flex;
@@ -700,6 +746,65 @@ img {
 .experience_button.experience_active{
   color: var(--first-color);
 }
+
+
+/*==================== PROJECTS ====================*/
+
+
+.projects-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.projects-background {
+  width: 100%;
+  height: 30%;
+  background-color: #3DC2EC;
+  z-index: 1;
+}
+
+.container-projects {
+  position: absolute; /* Make sure it's positioned relative to its parent */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  padding: 20px;
+  background: var(--title-color); 
+  border-radius: 10px;
+  width: 80%;
+  height: 80%;
+}
+
+.work-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.projects-button {
+  position: absolute; 
+  top: 30px; 
+  right: 10%; 
+  background-color: #3DC2EC;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  z-index: 10; 
+}
+
+
+
+
+
+
 
 /*==================== CONTACT ME ====================*/
 .contact_container{
@@ -875,9 +980,6 @@ img {
     width: 180px;
   }
 
-  .skills_title{
-    font-size: var(--normal-font-size);
-  }
 
   .experience_data{
     gap: .5rem;
