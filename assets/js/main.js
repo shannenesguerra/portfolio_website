@@ -191,3 +191,103 @@ themeButton.addEventListener('click', () => {
 })
 
 
+//CONTACT ME
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById('contactForm');
+  const modal = document.getElementById('emailSentModal');
+  const closeModal = document.getElementById('closeModal');
+  const span = document.getElementsByClassName("close")[0];
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const formData = new FormData(form);
+    
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formData,
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.success) {
+        modal.style.display = "block";
+        form.reset();
+      } else {
+        alert("Error: " + data.message);
+      }
+    })
+    .catch(error => console.error('Error:', error));
+  });
+
+  closeModal.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+});
+
+
+
+// SKILLS
+document.addEventListener('DOMContentLoaded', function () {
+  let isDragging = false;
+  let startX;
+  let scrollLeft;
+
+  const containers = document.querySelectorAll('.small-box-container-top, .small-box-container-bottom');
+
+  containers.forEach(container => {
+    container.addEventListener('mousedown', (e) => {
+      isDragging = true;
+      startX = e.pageX - container.getBoundingClientRect().left;
+      scrollLeft = container.scrollLeft;
+      container.style.cursor = 'grabbing';
+    });
+
+    container.addEventListener('mouseleave', () => {
+      isDragging = false;
+      container.style.cursor = 'grab';
+    });
+
+    container.addEventListener('mouseup', () => {
+      isDragging = false;
+      container.style.cursor = 'grab';
+    });
+
+    container.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      e.preventDefault();
+      const x = e.pageX - container.getBoundingClientRect().left;
+      const walk = (x - startX) * 2; // Adjust multiplier for scroll speed
+      container.scrollLeft = scrollLeft - walk;
+    });
+
+    // Touch support
+    container.addEventListener('touchstart', (e) => {
+      isDragging = true;
+      startX = e.touches[0].pageX - container.getBoundingClientRect().left;
+      scrollLeft = container.scrollLeft;
+    });
+
+    container.addEventListener('touchend', () => {
+      isDragging = false;
+    });
+
+    container.addEventListener('touchmove', (e) => {
+      if (!isDragging) return;
+      e.preventDefault();
+      const x = e.touches[0].pageX - container.getBoundingClientRect().left;
+      const walk = (x - startX) * 2; // Adjust multiplier for scroll speed
+      container.scrollLeft = scrollLeft - walk;
+    });
+  });
+});
