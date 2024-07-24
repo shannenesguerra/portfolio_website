@@ -661,6 +661,13 @@ body.dark-theme .interest {
   white-space: nowrap;
 }
 
+
+body.dark-theme .box {
+  background-color: #000; 
+ 
+}
+
+
 body:not(.dark-theme) .box {
   background-color: #fff;
   color: #000;
@@ -670,6 +677,7 @@ body:not(.dark-theme) .small-box {
 }
 body:not(.dark-theme) .rotated-text-top {
   color: #000;
+  
 }
 body:not(.dark-theme) .rotated-text-bottom {
   color: #000;
