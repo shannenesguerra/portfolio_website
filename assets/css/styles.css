@@ -536,14 +536,14 @@ img {
 
 
 body:not(.dark-theme) .interest {
-  background-color: #fff; 
+  background-color: #D9D9D9; 
   color: #000; 
 }
 
 
 body.dark-theme .interest {
-  background-color: #000; 
-  color: #fff;
+  background-color: #D9D9D9; 
+  color: #000000;
 }
 
 
@@ -646,7 +646,7 @@ body.dark-theme .interest {
 .small-box {
   width: 80px;
   height: 80px;
-  background-color: #f1f1f1;
+  background-color: #FFF;
   border-radius: 10px;
 }
 
@@ -663,24 +663,28 @@ body.dark-theme .interest {
 
 
 body.dark-theme .box {
-  background-color: #000; 
+  background-color: #A1A1A1; 
  
 }
 
+body.dark-theme .small-box {
+  background-color: #D9D9D9; 
+ 
+}
 
 body:not(.dark-theme) .box {
-  background-color: #fff;
+  background-color: #181818;
   color: #000;
 }
 body:not(.dark-theme) .small-box {
-  background-color: #000;
+  background-color: #D9D9D9;
 }
 body:not(.dark-theme) .rotated-text-top {
-  color: #000;
+  color: #FFF;
   
 }
 body:not(.dark-theme) .rotated-text-bottom {
-  color: #000;
+  color: #FFF;
 }
 
 
@@ -815,9 +819,10 @@ body.dark-theme .rotated-text-bottom, .rotated-text-top {
 }
 
 .container-projects {
-  position: absolute; /* Make sure it's positioned relative to its parent */
+  position: absolute; 
   top: 50%;
   left: 50%;
+  margin-top: 20px;
   transform: translate(-50%, -50%);
   z-index: 2;
   padding: 20px;
@@ -825,7 +830,7 @@ body.dark-theme .rotated-text-bottom, .rotated-text-top {
   border-radius: 10px;
   width: 80%;
   height: 80%;
-  overflow: hidden; /* Hide overflow to create carousel effect */
+  overflow: hidden; 
 }
 
 .carousel {
@@ -845,6 +850,7 @@ body.dark-theme .rotated-text-bottom, .rotated-text-top {
 }
 
 .projects-button {
+  font-family: Poppins;
   position: absolute;
   top: 30px;
   right: 10%;
@@ -912,6 +918,10 @@ body.dark-theme .rotated-text-bottom, .rotated-text-top {
   padding: .25rem .5rem .5rem 0;
 }
 
+.contact_button {
+  font-family: Poppins;
+  border: none;
+}
 
 /*==================== CONTACT ME MODAL ====================*/
 .modal {
@@ -930,8 +940,8 @@ body.dark-theme .rotated-text-bottom, .rotated-text-top {
   background-color: #fefefe;
   padding: 20px;
   border: 1px solid #888;
-  width: 90%; /* Make modal responsive */
-  max-width: 500px; /* Set a maximum width */
+  width: 90%; 
+  max-width: 500px; 
   position: absolute;
   top: 50%;
   left: 50%;
