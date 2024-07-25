@@ -5,17 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--==================== UNICONS ====================-->
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"
-    />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"/>
 
     <!--==================== SWIPER CSS ====================-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css" />
-
+    <link rel="icon" href="\assets\img\main icon.png" type="image/x-icon">
     <title>Shannen Esguerra</title>
   </head>
   <body>
@@ -41,6 +38,9 @@
             </li>
             <li class="nav-item">
               <a href="#experience" class="nav_link">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a href="#project" class="nav_link">Project</a>
             </li>
             <li class="nav-item">
               <a href="#contact" class="nav_link">Contact</a>
@@ -167,7 +167,7 @@
         <span class="section__subtitle">My introduction</span>
 
         <div class="about_container container grid">
-          <img src="assets/img/about.png" alt="" class="about_img" />
+          <img src="assets/img/about.webp" alt="" class="about_img" />
 
           <div class="about_data">
             <p class="about_description">
@@ -189,12 +189,19 @@
         <br>
         <div class="interest-wrapper">
           <div class="interest-container">
-            <div class="interest">Online Games</div>
-            <div class="interest">Art</div>
-            <div class="interest">Technology</div>
-            <div class="interest">Music</div>
-            <div class="interest">Movies</div>
-            <div class="interest">Videos</div>
+            <div class="interest"><h3 class="interest-subtitle">Online Games</h3>
+              <h5>I love playing online games which leads me to pursue to develop a game.</h5>
+            </div>
+            <div class="interest"><h3 class="interest-subtitle">Art</h3>
+              <h5>Ever since I was a kid, I am really into arts.</h5></div>
+            <div class="interest"><h3 class="interest-subtitle">Technology</h3>
+              <h5>Technology inspires me to pursue IT but in a creative way.</h5></div>
+            <div class="interest"><h3 class="interest-subtitle">Music</h3>
+              <h5>Music is part of my daily life.</h5></div>
+            <div class="interest"><h3 class="interest-subtitle">Movies</h3>
+              <h5>I love various genre of movies especially horror.</h5></div>
+            <div class="interest"><h3 class="interest-subtitle">Videos</h3>
+              <h5>Watching on YouTube and Tiktok is my favorite past-time.</h5></div>
           </div>
         </div>
       </section>
@@ -208,28 +215,59 @@
             <div class="box box1">
               <div class="small-box-container-top">
                 <h3 class="rotated-text-top">TOOLS</h3>
-                <div class="small-box"></div>
-                <div class="small-box"></div>
-                <div class="small-box"></div>
-                <div class="small-box"></div>
-                <div class="small-box"></div>
-                <div class="small-box"></div>
-                <div class="small-box"></div>
-                <div class="small-box"></div>
+                <div class="small-box">
+                  <img class="skills_icon" src="assets\img\skills icons\photoshop.png" alt=""/>
+                </div>
+                <div class="small-box">
+                  <img class="skills_icon" src="assets\img\skills icons\illustrator.png" alt=""/>
+                </div>
+                <div class="small-box">
+                  <img class="skills_icon" src="assets\img\skills icons\figma.png" alt=""/>
+                </div>
+                <div class="small-box">
+                  <img class="skills_icon" src="assets\img\skills icons\blender.png" alt=""/>
+                </div>
+                <div class="small-box">
+                  <img class="skills_icon" src="assets\img\skills icons\unity.png" alt=""/>
+                </div>
+                <div class="small-box sketchbook">
+                  <img class="skills_icon" src="assets\img\skills icons\sketchbook.png" alt="">
+                </div>
+                <div class="small-box">
+                  <img class="skills_icon" src="assets\img\skills icons\krita.png" alt="" width="60">
+                </div>
+                <div class="small-box">
+                </div>
               </div>
             </div>
           </div>
           <div class="boxholder2">
             <div class="box box2">
               <div class="small-box-container-bottom">
-                <div class="small-box"></div>
-                <div class="small-box"></div>
-                <div class="small-box"></div>
-                <div class="small-box"></div>
-                <div class="small-box"></div>
-                <div class="small-box"></div>
-                <div class="small-box"></div>
-                <div class="small-box"></div>
+                <div class="small-box">
+                  <img class="skills_icon" src="assets\img\skills icons\html.png" alt=""/>
+                </div>
+                <div class="small-box">
+                  <img class="skills_icon" src="assets\img\skills icons\css.png" alt=""/>
+                </div>
+                <div class="small-box">
+                  <img class="skills_icon" src="assets\img\skills icons\bootstrap.png" alt=""/>
+                </div>
+                <div class="small-box">
+                  <img class="skills_icon" src="assets\img\skills icons\javascript.png" alt=""/>
+                </div>
+                <div class="small-box">
+                  <img class="skills_icon" src="assets\img\skills icons\java.png" alt=""/>
+                </div>
+                <div class="small-box">
+                  <img class="skills_icon" src="assets\img\skills icons\c++.png" alt=""/>
+                </div>
+                <div class="small-box">
+                  <img class="skills_icon" src="assets\img\skills icons\python.png" alt=""/>
+                </div>
+                <div class="small-box">
+                  <img class="skills_icon" src="assets\img\skills icons\mongodb.png" alt=""/>
+                </div>
                 <h3 class="rotated-text-bottom">LANGUAGES</h3>
               </div>
             </div>
@@ -240,7 +278,7 @@
       </section>
 
       <!--==================== EXPERIENCE ====================-->
-      <section class="experience section">
+      <section class="experience section" id="experience">
         <h2 class="section__title">Experience</h2>
         <span class="section__subtitle">My personal journey</span>
 
@@ -387,19 +425,25 @@
         </div>
       </section>
         <!--============= PROJECT ===========-->
-    <section class="project section"></section>
+    <section class="project section" id="project"></section>
       <h2 class="section__title">My Projects</h2>
       <span class="section__subtitle">My recent works</span>
       <div class="projects-wrapper">
-        <button class="projects-button">View all</button>
+        <button class="projects-button">View all
+          <a href="https://www.artstation.com/shannenesguerra7"></a>
+        </button>
         <div class="projects-background"></div>
         <div class="container-projects">
             <div class="carousel">
-                <div class="slide"><img src="your-image1.jpg" alt="Your Work 1" class="work-image"></div>
-                <div class="slide"><img src="your-image2.jpg" alt="Your Work 2" class="work-image"></div>
-                <div class="slide"><img src="your-image3.jpg" alt="Your Work 3" class="work-image"></div>
-                <!-- <div class="slide"><img src="/assets/img/about.png" alt="Your Work 1" class="work-image"></div>
-                <div class="slide"><img src="/assets/img/home.png" alt="Your Work 1" class="work-image"></div> -->
+                <div class="slide"><img src="assets\img\projects\axe1.png" alt="Your Work 1" class="work-image" height="80%"></div>
+                <div class="slide"><img src="assets\img\projects\characters1.png" alt="Your Work 2" class="work-image"></div>
+                <div class="slide"><img src="assets\img\projects\cyberpunk1.png" alt="Your Work 3" class="work-image"></div>
+                <div class="slide"><img src="assets\img\projects\katana1.png" alt="Your Work 1" class="work-image"></div>
+                <div class="slide"><img src="assets\img\projects\medieval1.png" alt="Your Work 2" class="work-image"></div>
+                <div class="slide"><img src="assets\img\projects\monitor1.png" alt="Your Work 3" class="work-image"></div>
+                <div class="slide"><img src="assets\img\projects\oldpc1.png" alt="Your Work 1" class="work-image"></div>
+                <div class="slide"><img src="assets\img\projects\room1.png" alt="Your Work 2" class="work-image"></div>
+                <div class="slide"><img src="assets\img\projects\squatter1.png" alt="Your Work 3" class="work-image"></div>
             </div>
         </div>
     </div>

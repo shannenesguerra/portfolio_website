@@ -106,24 +106,7 @@ let swiperPortfolio = new Swiper('.portfolio_container', {
   }
 });
 
-/*==================== TESTIMONIAL ====================*/
-let swiperTestimonial = new Swiper('.testimonial_container', {
-  loop: true,
-  grabCursor: true,
-  spaceBetween: 48,
 
-  pagination: {
-    el: '.swiper-pagiantion',
-    clickable: true,
-    dynamicBullets: true
-  },
-
-  breakpoints:{
-    568:{
-      slidesPerView: 2,
-    }
-  }
-});
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
@@ -238,7 +221,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // SKILLS
-document.addEventListener('DOMContentLoaded', function () {
+/*document.addEventListener('DOMContentLoaded', function () {
   let isDragging = false;
   let startX;
   let scrollLeft;
@@ -290,7 +273,7 @@ document.addEventListener('DOMContentLoaded', function () {
       container.scrollLeft = scrollLeft - walk;
     });
   });
-});
+});*/
 
 //PROJECTS CAROUSEL
 
