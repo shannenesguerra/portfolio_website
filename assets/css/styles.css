@@ -685,11 +685,11 @@ body.dark-theme .interest {
 }
 
 body.dark-theme .box {
-  background-color: #A1A1A1; 
+  background-color: #D9D9D9; 
 }
 
 body.dark-theme .small-box {
-  background-color: #D9D9D9; 
+  background-color: #f1f1f1; 
 }
 
 body:not(.dark-theme) .box {
@@ -707,9 +707,17 @@ body:not(.dark-theme) .rotated-text-bottom {
   color: #3DC2EC;
 }
 
-body.dark-theme .rotated-text-bottom, .rotated-text-top {
+body.dark-theme {
   color: #fff;
 }
+
+.rotated-text-bottom {
+  color: var(--first-color);
+}
+.rotated-text-top {
+  color: #3DC2EC;
+}
+
 
 /*.small-box-wrapper {
   cursor: grab; 
