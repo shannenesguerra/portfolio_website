@@ -425,6 +425,7 @@ img {
 
 /*==================== BUTTONS ====================*/
 .button{
+  font-family: Poppins;
   display: inline-block;
   background-color: var(--first-color);
   color: #FFF;
@@ -432,6 +433,7 @@ img {
   border-radius: .5rem;
   font-weight: var(--font-medium);
   cursor: pointer;
+  border: none;
 }
 
 .button:hover{
@@ -974,7 +976,6 @@ body.dark-theme {
 .modal-content {
   background-color: #fefefe;
   padding: 20px;
-  border: 1px solid #888;
   width: 90%; 
   max-width: 500px; 
   position: absolute;
@@ -986,6 +987,11 @@ body.dark-theme {
   align-items: center;
   color: #000;
   border-radius: 10px;
+}
+
+.uil-envelope-check {
+  font-size: 100px;
+  color: var(--first-color);
 }
 
 /* Media Queries for responsiveness */
