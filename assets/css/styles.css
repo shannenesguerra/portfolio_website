@@ -236,6 +236,7 @@ img {
 
 .nav_logo:hover{
   color: var(--first-color);
+  transition: ease-in-out 0.2s;
 }
 
 .nav_toggle{
@@ -416,6 +417,7 @@ img {
 
 .home_social-icon:hover{
   color: var(--title-color);
+  transition: ease-in-out 0.2s;
 }
 
 
@@ -434,6 +436,7 @@ img {
 
 .button:hover{
   background-color: var(--first-color-second);
+  transition: ease-in-out 0.2s;
 }
 
 .button_icon{
@@ -880,7 +883,7 @@ body.dark-theme .rotated-text-bottom, .rotated-text-top {
   right: 10%;
   background-color: #3DC2EC;
   color: white;
-  padding: 15px 30px;
+  padding: 15px 20px;
   border: none;
   font-size: 16px;
   cursor: pointer;
@@ -890,6 +893,7 @@ body.dark-theme .rotated-text-bottom, .rotated-text-top {
 
 .projects-button:hover {
   background-color: #4B70F5;
+  transition: ease-in-out 0.2s;
 } 
 
 
@@ -1052,6 +1056,7 @@ body.dark-theme .rotated-text-bottom, .rotated-text-top {
 
 .footer_link:hover{
   color: var(--first-color-lighter);
+  transition: ease-in-out 0.2s;
 }
 
 .footer_social{
@@ -1061,6 +1066,7 @@ body.dark-theme .rotated-text-bottom, .rotated-text-top {
 
 .footer_social:hover{
   color: var(--first-color);
+  transition: ease-in-out 0.2s;
 }
 
 .footer_copy{
@@ -1092,6 +1098,7 @@ body.dark-theme .rotated-text-bottom, .rotated-text-top {
 
 .scrollup:hover{
   background-color: var(--first-color-third);
+  transition: ease-in-out 0.2s;
 }
 
 .scrollup_icon{
