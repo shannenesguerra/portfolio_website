@@ -1202,6 +1202,49 @@ body:not(.dark-theme) .rotated-text-bottom {
 }
 
 /* For medium devices */
+@media screen and (max-width:430px){
+  .home_img {
+    width: 240px;
+    height: 240px;
+    margin-right: 20%;
+    background: var(--first-color);
+  }
+
+  .about_img {
+    margin-right: -1.5%;
+  }
+
+  .about_description {
+    margin-top: -5%;
+    margin-left: -1.5%;
+  }
+
+  .skills_container {
+    width: 90%;
+  }
+  
+  .projects-wrapper {
+    margin-bottom: -100%;
+  }
+
+  .projects-button {
+    padding: 10px 15px;
+  }
+
+  .projects-background {
+    margin-top: -80%;
+  }
+
+  .container-projects {
+    margin-top: -40%;
+    height: 35%;
+  }
+
+  .footer_socials {
+    margin-left: 30%;
+  }
+}
+
 @media screen and (max-width:568px){
   .home_scroll_social{
     visibility: hidden;
@@ -1221,8 +1264,6 @@ body:not(.dark-theme) .rotated-text-bottom {
     padding-top: 30px;
   }
 
-  
-
   .home_img{
     justify-self: center;
     background-color: var(--first-color);
@@ -1232,6 +1273,10 @@ body:not(.dark-theme) .rotated-text-bottom {
     overflow: hidden;
     padding-left: 60px;
     order: 1;
+  }
+
+  .home_scroll_social{
+    visibility: hidden;
   }
 
   .home_social a {
@@ -1276,8 +1321,10 @@ body:not(.dark-theme) .rotated-text-bottom {
     grid-template-columns: .6fr;
     justify-content: center;
   }
+  
 }
 
+/* for navbar */
 @media screen and (min-width: 767px){
   body{
     margin: 0;
@@ -1302,6 +1349,8 @@ body:not(.dark-theme) .rotated-text-bottom {
   .nav_toogle{
     visibility: hidden;
   }
+
+
 }
 
 
