@@ -421,11 +421,9 @@ img {
 }
 
 
-
-
 /*==================== BUTTONS ====================*/
 .button{
-  font-family: Poppins;
+  font-family: var(--body-font);
   display: inline-block;
   background-color: var(--first-color);
   color: #FFF;
@@ -709,10 +707,6 @@ body:not(.dark-theme) .rotated-text-bottom {
   color: #3DC2EC;
 }
 
-body.dark-theme {
-  color: #fff;
-}
-
 .rotated-text-bottom {
   color: var(--first-color);
 }
@@ -792,7 +786,6 @@ body.dark-theme {
 
 .experience_calendar{
   font-size: var(--smaller-font-size);
-  color: var(--text-color-light);
 }
 
 .experience_rounder{
@@ -887,7 +880,7 @@ body.dark-theme {
 }
 
 .projects-button {
-  font-family: Poppins;
+  font-family: var(--body-font);
   position: absolute;
   top: 30px;
   right: 10%;
@@ -948,7 +941,7 @@ body.dark-theme {
   width: 100%;
   background-color: var(--input-color);
   color: var(--text-color);
-  font-family: var(--body-color);
+  font-family: var(--body-font);
   font-size: var(--normal-font-size);
   border: none;
   outline: none;
@@ -956,7 +949,7 @@ body.dark-theme {
 }
 
 .contact_button {
-  font-family: Poppins;
+  font-family: var(--body-font);
   border: none;
 }
 
