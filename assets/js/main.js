@@ -293,4 +293,27 @@ setInterval(showNextSlide, 3000); // Change slide every 3 seconds
 document.querySelector('.carousel').style.transform = `translateX(-${currentIndex * 100}%)`;
 
 
-// SKILLS
+//fadein
+
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll('.section');
+
+  const options = {
+      threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('fade-in');
+          } else {
+              entry.target.classList.remove('fade-in');
+          }
+      });
+  }, options);
+
+  sections.forEach(section => {
+      observer.observe(section);
+  });
+});
+

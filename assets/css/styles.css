@@ -156,7 +156,14 @@ img {
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section {
   padding: 2rem 0 4rem;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
+.section.fade-in {
+  opacity: 1;
+}
+
+
 
 .section__title {
   font-size: var(--h1-font-size);
