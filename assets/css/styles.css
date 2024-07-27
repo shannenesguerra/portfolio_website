@@ -1239,14 +1239,15 @@ body:not(.dark-theme) .rotated-text-bottom {
   }
 
   .projects-background {
-    margin-top: -80%;
+    margin-top: -90%;
   }
 
   .container-projects {
-    margin-top: -40%;
+    margin-top: -45%;
     height: 35%;
   }
 
+  
   .footer_socials {
     margin-left: 30%;
   }
