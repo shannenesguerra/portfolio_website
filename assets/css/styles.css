@@ -823,6 +823,35 @@ body:not(.dark-theme) .rotated-text-bottom {
   color: var(--first-color);
 }
 
+/* certification*/
+
+.certificate {
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+
+.certificate_container {
+  display: flex;
+  justify-content: center;
+}
+
+.certificate_button {
+  width: 350px;
+}
+
+.certificate_title {
+  font-size: 18px;
+}
+
+.certificate_subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  color: #D9D9D9;
+}
+
+.certificate_view {
+  font-weight: 300;
+}
 
 /*==================== PROJECTS ====================*/
 .projects-wrapper {
