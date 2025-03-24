@@ -1269,21 +1269,6 @@ body:not(.dark-theme) .rotated-text-bottom {
     width: 200px;
   }
 
-  .testimonial_data,
-  .testimonial_header{
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .testimonial_img{
-    margin-right: 0;
-    margin-bottom: var(--mb-0-25);
-  }
-
-  .testimonial_data,
-  .testimonial_description{
-    text-align: center;
-  }
 }
 
 /* For medium devices */
@@ -1309,7 +1294,7 @@ body:not(.dark-theme) .rotated-text-bottom {
   }
   
   .projects-wrapper {
-    margin-bottom: -100%;
+    margin-bottom: -50%;
   }
 
   .projects-button {
@@ -1325,6 +1310,9 @@ body:not(.dark-theme) .rotated-text-bottom {
     height: 35%;
   }
 
+  .container-proj {
+    margin-top: -50%;
+  }
   
   .footer_socials {
     margin-left: 30%;
